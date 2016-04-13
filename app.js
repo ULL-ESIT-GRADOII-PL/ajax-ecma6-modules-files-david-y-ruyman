@@ -1,4 +1,4 @@
-"use strict";
+//"use strict";
 
 const express = require('express');
 const app = express();
@@ -13,7 +13,7 @@ app.use(expressLayouts);
 
 app.use(express.static(__dirname + '/public'));
 
-const calculate = require('models/calculate');
+const calculate = require('./models/calculate');
 
 app.get('/', (request, response) => {     
   res.render ('index', { title: "CSV Analyzer"} );
