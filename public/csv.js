@@ -73,16 +73,6 @@ $(document).ready(() => {
     }
 
     /* Request AJAX para que se calcule la tabla */
-<<<<<<< HEAD
-    XXXXXXXXXXXXXXXXXX XX XX X
-        XX XXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXX X XXXXXXXXXXXXXXX
-        XXXXXXXXXXXXX
-          X XXXXXX XXXXXXXXXXXXXX XX
-          XXXXXXXXXX
-          XXXXXX
-        XX
-   XXX
-=======
     $("#parse").click( () => {
         if (window.localStorage) localStorage.original = original.value;
         $.get("/csv",
@@ -91,12 +81,10 @@ $(document).ready(() => {
           'json'
         );
     });
-    
->>>>>>> origin/master
    /* botones para rellenar el textarea */
    $('button.example').each((index, element) => {
-     $(element).click(() => { 
-        dump(`${$(element).text()}.txt`); 
+     $(element).click(() => {
+        dump(`${$(element).text()}.txt`);
       });
    });
 
