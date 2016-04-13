@@ -4,7 +4,7 @@
   "description": "Analizador de cadenas csv usando AJAX",
   "main": "app.js",
   "scripts": {
-    "start": "node --harmony app.js",
+    "start": "node app.js",
     "test": "firefox tests/index.html"
   },
   "repository": {
@@ -29,7 +29,7 @@
     "express-ejs-layouts": "~1.1.0"
   },
   "engines": {
-    "node": "0.12.7"
+    "node": "4.2.1"
   },
   "devDependencies": {
   }
