@@ -73,6 +73,7 @@ $(document).ready(() => {
     }
 
     /* Request AJAX para que se calcule la tabla */
+<<<<<<< HEAD
     XXXXXXXXXXXXXXXXXX XX XX X
         XX XXXXXXXXXXXXXXXXXXXXX XXXXXXXXXXXXXXXXXXXXX X XXXXXXXXXXXXXXX
         XXXXXXXXXXXXX
@@ -81,10 +82,23 @@ $(document).ready(() => {
           XXXXXX
         XX
    XXX
+=======
+    $("#parse").click( () => {
+        if (window.localStorage) localStorage.original = original.value;
+        $.get("/csv",
+          { textocsv: original.value },
+          fillTable,
+          'json'
+        );
+    });
+    
+>>>>>>> origin/master
    /* botones para rellenar el textarea */
-   XXXXXXXXXXXXXXXXXXXXXXXXX XXXXX XX X
-     XXXXXXXXXXX XX XX X XXXXXXXXXXXXXXXXXXXXXXXXXXX XXX
-   XXX
+   $('button.example').each((index, element) => {
+     $(element).click(() => { 
+        dump(`${$(element).text()}.txt`); 
+      });
+   });
 
     // Setup the drag and drop listeners.
     //var dropZone = document.getElementsByClassName('drop_zone')[0];
