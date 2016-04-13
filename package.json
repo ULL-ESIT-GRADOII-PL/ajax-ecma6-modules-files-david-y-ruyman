@@ -4,6 +4,7 @@
   "description": "Analizador de cadenas csv usando AJAX",
   "main": "csv.js",
   "scripts": {
+    "start": "node app.js",
     "test": "firefox tests/index.html"
   },
   "repository": {
