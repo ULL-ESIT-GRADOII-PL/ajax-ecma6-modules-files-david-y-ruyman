@@ -2,9 +2,9 @@
   "name": "PL_practica2",
   "version": "1.0.0",
   "description": "Analizador de cadenas csv usando AJAX",
-  "main": "csv.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node --harmony app.js",
     "test": "firefox tests/index.html"
   },
   "repository": {
