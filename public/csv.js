@@ -68,7 +68,7 @@ const handleDragOver = (evt) => {
 
 $(document).ready(() => {
     let original = document.getElementById("original");
-    if (window.localStorage && localStorage.original) {
+    if (window.localStorage && localStorage.original && original) {
       original.value = localStorage.original;
     }
 
